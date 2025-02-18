@@ -1,4 +1,3 @@
-.vscode/
-*.exe
-Makefile
-MakefileMatt
+.vs
+bin
+build

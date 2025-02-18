@@ -4,15 +4,15 @@
 
 void setupGame()
 {
-    setupLevel01();
+	setupLevel01();
 }
 
 void updateGame()
 {
-    updateLevel01();
+	updateLevel01();
 }
 
 void endGame()
 {
-    endLevel01();
+	endLevel01();
 }
