@@ -1,11 +1,5 @@
 #pragma once
 
-enum class OBJ_TYPE
-{
-	BACKGROUND,
-	PLAYER
-};
-
 class Object
 {
 public:

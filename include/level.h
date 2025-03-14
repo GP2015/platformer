@@ -6,9 +6,11 @@
 
 class Level
 {
-public:
+private:
 	std::vector<Object*> objs;
+
+public:
 	~Level();
-	void update();
 	void addObject(Object* obj);
+	void update();
 };

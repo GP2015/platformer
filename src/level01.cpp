@@ -1,6 +1,6 @@
 #include "level01.h"
 
-#include <raylib.h>
+#include "raylib.h"
 
 #include "level.h"
 #include "background.h"
@@ -21,8 +21,7 @@ void setupLevel01()
 	plyr->setPos("bc", 160, 130);
 	level01->addObject(plyr);
 
-	Block* blk = new Block();
-	blk->linkPlayer(plyr);
+	Block* blk = new Block(plyr);
 	blk->setShape("bc", 160, 180, 200, 50);
 	blk->setColor(GREEN);
 	level01->addObject(blk);

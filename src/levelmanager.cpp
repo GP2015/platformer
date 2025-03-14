@@ -1,3 +1,5 @@
+#include "levelmanager.h"
+
 #include "level01.h"
 
 void setupGame()

@@ -1,7 +1,7 @@
 #include "player.h"
 
 #include <string>
-#include <raylib.h>
+#include "raylib.h"
 
 #include "defs.h"
 #include "object.h"
@@ -15,7 +15,7 @@
 #define PLYR_JUMP_VEL 2.5
 #define PLYR_GRAVITY 0.1
 
-void Player::setPos(const std::string& str, float xpos, float ypos)
+void Player::setPos(std::string str, float xpos, float ypos)
 {
 	setYPos(str[0], ypos);
 	setXPos(str[1], xpos);
@@ -67,6 +67,14 @@ void Player::setYVel(float yvel)
 {
 	this->yvel = yvel;
 }
+
+float Player::getXPos() { return xpos; }
+float Player::getYPos() { return ypos; }
+float Player::getXVel() { return xvel; }
+float Player::getYVel() { return yvel; }
+float Player::getWidth() { return width; }
+float Player::getHeight() { return height; }
+bool Player::getGrounded() { return grounded; }
 
 float Player::left() { return xpos; }
 float Player::right() { return xpos + width; }

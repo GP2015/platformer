@@ -18,27 +18,35 @@
 
 class Player : public Object
 {
-public:
+private:
 
 	float xpos = 0;
 	float ypos = 0;
 	float xvel = 0;
 	float yvel = 0;
-	bool grounded = false;
 	float width = PLYR_WIDTH;
 	float height = PLYR_HEIGHT;
+	bool grounded = false;
+	Color color;
 
-	void setPos(const std::string& str, float xpos, float ypos);
+public:
 
+	void setPos(std::string str, float xpos, float ypos);
 	void setXPos(char c, float xpos);
 	void setYPos(char c, float ypos);
 
-	void setGrounded(bool grounded);
-
+	void setVel(float xvel, float yvel);
 	void setXVel(float xvel);
 	void setYVel(float yvel);
 
+	void setGrounded(bool grounded);
+
 	float left(), right(), top(), bottom();
+
+	float getXPos(), getYPos();
+	float getXVel(), getYVel();
+	float getWidth(), getHeight();
+	bool getGrounded();
 
 	void update(), draw();
 };
