@@ -1,6 +1,6 @@
-#pragma once
+#include "level01.h"
 
-#include "raylib.h"
+#include <raylib.h>
 
 #include "level.h"
 #include "background.h"
@@ -24,6 +24,7 @@ void setupLevel01()
 	Block* blk = new Block();
 	blk->linkPlayer(plyr);
 	blk->setShape("bc", 160, 180, 200, 50);
+	blk->setColor(GREEN);
 	level01->addObject(blk);
 }
 

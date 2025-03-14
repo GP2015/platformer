@@ -1,5 +1,3 @@
-#pragma once
-
 #include "level01.h"
 
 void setupGame()
